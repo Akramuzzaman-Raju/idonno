@@ -13,9 +13,9 @@ export default function Chat() {
     <div className="p-4">
       {user1Messages.map((message, index) => (
         <div key={index} className="chat chat-start mb-4 flex items-start">
-          <div className="chat-image avatar">
-            
-          </div>
+          <div className="chat-header">
+      Obi-Wan Kenobi
+    </div>
           <div className="chat-bubble bg-blue-500 text-white px-4 py-2 rounded-lg ml-2">
             <p>{message}</p>
           </div>

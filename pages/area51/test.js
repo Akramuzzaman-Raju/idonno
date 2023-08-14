@@ -1,46 +1,47 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React from 'react'
 
-function UserList() {
-  const [users, setUsers] = useState([]);
-
-  useEffect(() => {
-    async function fetchUsers() {
-      try {
-        const response = await axios.get('http://localhost:3001/consultants/find');
-        setUsers(response.data);
-      } catch (error) {
-        console.error('This is the error:', error);
-      }
-    }
-
-    fetchUsers();
-  }, []);
-
+export default function test() {
   return (
-    <div className="bg-gray-100 min-h-screen flex justify-center items-center">
-      <div className="bg-white w-full md:w-2/3 lg:w-1/2 xl:w-1/3 rounded-lg shadow-lg p-6">
-        <h1 className="text-3xl font-semibold mb-4 text-center">Consultant List</h1>
-        <ul>
-          {users.map(user => (
-            <li key={user.id} className="mb-4">
-              <div className="bg-blue-100 p-6 rounded-lg shadow-md">
-                <h2 className="text-lg font-semibold mb-2">{user.name}</h2>
-                <p className="text-gray-700">{user.phone}</p>
-                {/* <p className="text-gray-700">{user.email}</p> */}
-                <p className="text-gray-500 mt-2">{user.country}</p>
-                <div className="mt-4 flex justify-end">
-                  <a
-                    href={`mailto:${user.email}`}
-                    className="text-blue-500 hover:underline">Send Mail</a>
-                </div>
-              </div>
-            </li>
-          ))}
-        </ul>
-      </div>
+    <div>
+    <div className="navbar bg-base-100">
+  <div className="navbar-start">
+    <div className="dropdown">
+      <label tabIndex={0} className="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+      </label>
+      <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+        <li><a>Item 1</a></li>
+        <li>
+          <a>Parent</a>
+          <ul className="p-2">
+            <li><a>Submenu 1</a></li>
+            <li><a>Submenu 2</a></li>
+          </ul>
+        </li>
+        <li><a>Item 3</a></li>
+      </ul>
     </div>
-  );
+    <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+  </div>
+  <div className="navbar-center hidden lg:flex">
+    <ul className="menu menu-horizontal px-1">
+      <li><a>Item 1</a></li>
+      <li tabIndex={0}>
+        <details>
+          <summary>Parent</summary>
+          <ul className="p-2">
+            <li><a>Submenu 1</a></li>
+            <li><a>Submenu 2</a></li>
+          </ul>
+        </details>
+      </li>
+      <li><a>Item 3</a></li>
+    </ul>
+  </div>
+  <div className="navbar-end">
+    <a className="btn">Button</a>
+  </div>
+</div>
+    </div>
+  )
 }
-
-export default UserList;

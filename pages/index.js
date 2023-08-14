@@ -10,6 +10,9 @@ import Navbar1 from './navbar/navbar1'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  function handleButtonClick() {
+    window.location.href = '../user/registration';
+ }
   return (
     <>
     <Navbar1/>
@@ -21,7 +24,9 @@ export default function Home() {
     <div>
       <h1 className="text-5xl font-bold">Study Abroad Consulatation Center</h1>
       <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-      <button className="btn btn-primary">Get Started</button>
+      {/* <button className="btn btn-primary">Register</button> */}
+      <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" onClick={handleButtonClick}>Register</button>
+
     </div>
   </div>
 </div>
