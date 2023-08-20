@@ -2,6 +2,9 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/area51/test": "pages/area51/test.js",
-  "/": "pages/index.js"
+  "/schedule/createschedule": "pages/schedule/createschedule.js",
+  "/Chat/message": "pages/Chat/message.js",
+  "/": "pages/index.js",
+  "/scholarship/deletescholarship": "pages/scholarship/deletescholarship.js",
+  "/schedule/deleteschedule": "pages/schedule/deleteschedule.js"
 }

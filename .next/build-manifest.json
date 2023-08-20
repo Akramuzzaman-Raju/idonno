@@ -17,6 +17,11 @@
       "static/chunks/main.js",
       "static/chunks/pages/index.js"
     ],
+    "/Chat/message": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/Chat/message.js"
+    ],
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -27,10 +32,20 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/area51/test": [
+    "/schedule/createschedule": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/area51/test.js"
+      "static/chunks/pages/schedule/createschedule.js"
+    ],
+    "/schedule/deleteschedule": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/schedule/deleteschedule.js"
+    ],
+    "/scholarship/deletescholarship": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/scholarship/deletescholarship.js"
     ]
   },
   "ampFirstPages": []

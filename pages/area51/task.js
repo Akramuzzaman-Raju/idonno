@@ -8,7 +8,7 @@ function APP()
     {
         try
         {
-            const response = await axios.get('http://localhost:3001/consultants/find/india');
+            const response = await axios.get('http://localhost:3001/consultants/find/Nepal');
             setData(response.data);
         }
         catch(error)

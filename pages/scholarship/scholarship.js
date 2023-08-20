@@ -16,7 +16,7 @@ export default function Scholarship() {
           universityName: universityName,
           eligibleCourse: eligibleCourse,
           possibleScholarship: possibleScholarship,
-
+ 
         };
         try{
             const response = await axios.post('http://localhost:3001/scholarships/scholarship',newScholarship);
