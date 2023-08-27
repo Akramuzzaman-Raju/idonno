@@ -17,6 +17,11 @@
       "static/chunks/main.js",
       "static/chunks/pages/index.js"
     ],
+    "/Chat/email": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/Chat/email.js"
+    ],
     "/Chat/message": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -32,11 +37,6 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/schedule/createschedule": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/schedule/createschedule.js"
-    ],
     "/schedule/deleteschedule": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -46,16 +46,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/scholarship/deletescholarship.js"
-    ],
-    "/scholarship/scholarship": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/scholarship/scholarship.js"
-    ],
-    "/user/edit": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/user/edit.js"
     ],
     "/user/home": [
       "static/chunks/webpack.js",
@@ -76,11 +66,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/user/profile.js"
-    ],
-    "/user/registration": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/user/registration.js"
     ]
   },
   "ampFirstPages": []
