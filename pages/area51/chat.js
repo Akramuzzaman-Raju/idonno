@@ -22,22 +22,8 @@ export default function Chat() {
         </div>
       ))}
       <div className="fixed bottom-0 w-full bg-white p-4 flex items-center">
-        <input
-          type="text"
-          id="voice-search"
-          value={user1}
-          onChange={(e) => setUser1(e.target.value)}
-          className="flex-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-          placeholder="Write a message..."
-          required
-        />
-        <button
-          id="btn"
-          onClick={user1messages}
-          type="button"
-          className="bg-blue-500 text-white rounded-lg px-4 py-2 ml-2">
-          Send
-        </button>
+        <input type="text" id="voice-search" value={user1} onChange={(e) => setUser1(e.target.value)} className="flex-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write a message..." required/>
+        <button id="btn" onClick={user1messages} type="button" className="bg-blue-500 text-white rounded-lg px-4 py-2 ml-2">Send</button>
       </div>
     </div>
   );

@@ -1,7 +1,8 @@
 
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Navbar1 from '../navbar/navbar1';
+import Logout from '../user/logout';
+import Navbar2 from '../navbar/navbar2';
 function Deletescholarship() {
   const [data, setData] = useState([]);
 
@@ -31,8 +32,11 @@ function Deletescholarship() {
   }
 
   return (
-    <div className="py-20">
-    <Navbar1/>
+    <>
+    
+    <Navbar2/>
+    <Logout/>
+    {/* <div className="py-20"> */}
     <div className="p-4" >
       <button className='flex flex-row bg-green-400 shadow-lg mb-5 shadow-slate-500 ml-4 p-4 rounded-3xl font-bold text-white hover:bg-green-500' onClick={handleButtonClick}>
       <svg xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
@@ -55,7 +59,8 @@ function Deletescholarship() {
         </ul>
       </div>
     </div>
-    </div>
+    {/* </div> */}
+    </>
   );
 }
 

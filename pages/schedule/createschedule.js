@@ -1,6 +1,8 @@
 import React from 'react'
 import { useState } from 'react';
 import axios from 'axios';
+import Navbar2 from '../navbar/navbar2';
+import Logout from '../user/logout';
 
 export default function Createschedule() {
     const[data, setData]= useState('');
@@ -29,18 +31,13 @@ export default function Createschedule() {
         }
     }
   return (
+  <>
+        <Navbar2/>
+        <Logout/>
 
     <div>
-      
-    <section className="bg-gray-50 dark:bg-gray-900">
-    {/* <div className="page2"> */}
-        <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
-            {/* <div className="flex flex-col justify-center">
-            <a href="#" className="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
-            <img className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white" src="/studyabroad-banner.jpg" alt="logo"/> </a>
-                <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Study Abroad Consultation Center</h1>
-                <p className="mb-6 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">"Unlocking Global Opportunities: Your Journey to Study Abroad Begins Here".</p>
-            </div> */}
+    <section className="bg-gray-50 dark:bg-gray-900" >
+        <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
             <div>
                 <div className="w-full lg:max-w-xl p-6 space-y-8 sm:p-8 bg-white rounded-lg shadow-xl dark:bg-gray-800">
                     <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
@@ -72,6 +69,7 @@ export default function Createschedule() {
     </section>
     
         </div>
+        </>
   )
   
 }

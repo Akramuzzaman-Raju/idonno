@@ -46,6 +46,41 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/scholarship/deletescholarship.js"
+    ],
+    "/scholarship/scholarship": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/scholarship/scholarship.js"
+    ],
+    "/user/edit": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/user/edit.js"
+    ],
+    "/user/home": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/user/home.js"
+    ],
+    "/user/login": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/user/login.js"
+    ],
+    "/user/logout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/user/logout.js"
+    ],
+    "/user/profile": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/user/profile.js"
+    ],
+    "/user/registration": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/user/registration.js"
     ]
   },
   "ampFirstPages": []
