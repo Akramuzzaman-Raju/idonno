@@ -2,13 +2,12 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/user/profile": "pages/user/profile.js",
-  "/user/login": "pages/user/login.js",
   "/schedule/deleteschedule": "pages/schedule/deleteschedule.js",
+  "/schedule/createschedule": "pages/schedule/createschedule.js",
   "/scholarship/deletescholarship": "pages/scholarship/deletescholarship.js",
-  "/user/logout": "pages/user/logout.js",
-  "/Chat/email": "pages/Chat/email.js",
-  "/Chat/message": "pages/Chat/message.js",
-  "/user/home": "pages/user/home.js"
+  "/scholarship/scholarship": "pages/scholarship/scholarship.js",
+  "/user/profile": "pages/user/profile.js",
+  "/user/edit": "pages/user/edit.js",
+  "/user/login": "pages/user/login.js",
+  "/user/logout": "pages/user/logout.js"
 }
