@@ -2,12 +2,5 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/schedule/deleteschedule": "pages/schedule/deleteschedule.js",
-  "/schedule/createschedule": "pages/schedule/createschedule.js",
-  "/scholarship/deletescholarship": "pages/scholarship/deletescholarship.js",
-  "/scholarship/scholarship": "pages/scholarship/scholarship.js",
-  "/user/profile": "pages/user/profile.js",
-  "/user/edit": "pages/user/edit.js",
-  "/user/login": "pages/user/login.js",
-  "/user/logout": "pages/user/logout.js"
+  "/": "pages/index.js"
 }
